@@ -34,3 +34,27 @@ for(let i=0;i<dataCard.length;i++){
     console.log(dataCard[i].img)
 
 }
+
+const btn=document.getElementById('btn-cards');
+btn.addEventListener('click',getCardsIntoDOM);
+const cardsContainer = document.getElementById('container');
+
+function getCardsIntoDOM(){
+    cardsContainer.innerHTML = '';
+    for(let j=0;j<dataCard.length;j++){
+        let card =document.createElement('ul');
+        let cardName = document.createElement('li')
+        let cardPosition = document.createElement('li')
+        card.classList.add('cards');
+        let cardImg = document.createElement('img')
+        cardName.innerHTML= dataCard[j].name;
+        cardImg.src = `img/${dataCard[j].img}`
+        cardPosition.innerHTML=dataCard[j].position;
+        cardImg.innerHTML=dataCard[j].img
+        cardsContainer.append(card)
+        card.append(cardName,cardPosition,cardImg)
+
+
+    
+    }
+}
