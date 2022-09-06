@@ -43,8 +43,11 @@ function getCardsIntoDOM(){
     cardsContainer.innerHTML = '';
     for(let j=0;j<dataCard.length;j++){
         let card =document.createElement('ul');
+        card.style.textDecoration= 'none'
         let cardName = document.createElement('li')
+        cardName.style.textDecoration = 'none'
         let cardPosition = document.createElement('li')
+        cardPosition.style.textDecoration = 'none'
         card.classList.add('cards');
         let cardImg = document.createElement('img')
         cardName.innerHTML= dataCard[j].name;
@@ -52,7 +55,7 @@ function getCardsIntoDOM(){
         cardPosition.innerHTML=dataCard[j].position;
         cardImg.innerHTML=dataCard[j].img
         cardsContainer.append(card)
-        card.append(cardName,cardPosition,cardImg)
+        card.append(cardImg,cardName,cardPosition)
 
 
     

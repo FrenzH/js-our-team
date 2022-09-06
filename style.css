@@ -20,9 +20,11 @@
   }
   .cards{
     width: calc(100%/3);
+    text-decoration: none;
   }
   #btn-container{
     text-align: center;
     height: 100px;
     margin: 20px;
   }
+ 
