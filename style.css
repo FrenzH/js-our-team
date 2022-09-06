@@ -8,6 +8,7 @@
   
   body {
     font-family: sans-serif;
+    background-color: brown;
   }
   
   /* utilities */
@@ -17,14 +18,33 @@
   #container{
     display: flex;
     flex-wrap: wrap;
+    width: 1200px;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
   }
   .cards{
-    width: calc(100%/3);
-    text-decoration: none;
+    width: calc(100% /4);
+    border-radius: 15px;
+    background-color: bisque;
+    padding: 30px;
+    margin: 10px;
   }
   #btn-container{
     text-align: center;
     height: 100px;
     margin: 20px;
   }
- 
+ ul{
+    list-style: none;
+ }
+ img{
+    width: 100%;
+ }
+
+ #btn-cards{
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 13px;
+  cursor: pointer;
+ }
