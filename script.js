@@ -4,7 +4,7 @@ const dataCard = [
     { name : 'Wayne Barnett',
       position : 'Founder & CEO',
       img : 'wayne-barnett-founder-ceo.jpg'},
-      
+
     { name : 'Angela Caroll',
       position : 'Chief Editor',
       img : 'angela-caroll-chief-editor.jpg'},
@@ -25,3 +25,12 @@ const dataCard = [
        position : 'Graphic Designer',
        img : 'barbara-ramos-graphic-designer.jpg'}
 ];
+
+
+
+for(let i=0;i<dataCard.length;i++){
+    console.log(dataCard[i].name)
+    console.log(dataCard[i].position)
+    console.log(dataCard[i].img)
+
+}
